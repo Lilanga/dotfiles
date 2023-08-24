@@ -28,7 +28,7 @@ npm i tree-sitter-cli
 # Install fzf
 FZF_VERSION=0.42.0
 mkdir -p ~/bin
-curl -L https://github.com/junegunn/fzf/releases/download/${FZF_VERSION}/fzf-${FZF_VERSION}-linux_amd64.tar.gz | tar xzC /usr/local/bin
+curl -L https://github.com/junegunn/fzf/releases/download/${FZF_VERSION}/fzf-${FZF_VERSION}-linux_amd64.tar.gz | tar xzC $HOME/.local/bin
 
 # Install nerdfont
 mkdir -p ~/.local/share/fonts
@@ -53,8 +53,8 @@ sudo install lazygit /usr/local/bin
 NVIM_VERSION=0.9.1
 sudo apt-get update -y
 sudo apt-get install -y fuse libfuse2
-curl -L -o /usr/local/bin/nvim https://github.com/neovim/neovim/releases/download/v${NVIM_VERSION}/nvim.appimage
-chmod a+x /usr/local/bin/nvim
+curl -L -o $HOME/.local/bin/nvim https://github.com/neovim/neovim/releases/download/v${NVIM_VERSION}/nvim.appimage
+chmod a+x $HOME/.local/bin/nvim
 
 # Install astrovim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
