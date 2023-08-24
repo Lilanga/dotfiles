@@ -59,5 +59,4 @@ chmod a+x $HOME/bin/nvim
 # Install astrovim
 git clone --depth 1 https://github.com/AstroNvim/AstroNvim ~/.config/nvim
 
-export PATH="$HOME/bin:$PATH"
-source ~/.bashrc
+echo 'export PATH=$PATH:$HOME/bin'  >> ~/.bashrc
