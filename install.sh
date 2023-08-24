@@ -18,7 +18,7 @@ export SUDO_ASKPASS=/bin/true
 
 mv .gitconfig .gitconfig.private
 
-# install fish shell
+# Install fish shell, not at this moment though
 # sudo apt-get install -y fish
 # sudo chsh -s /usr/bin/fish $USER
 
